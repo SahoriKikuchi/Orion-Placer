@@ -1,7 +1,7 @@
 <%-- 
     Document   : login.jsp
     Created on : 31 de out. de 2022, 22:17:13
-    Author     : amand
+    Author     : Amanda e Lucas
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -82,8 +82,8 @@
                                 <div class="text-center">
                                     <div class=""><span>
                                             <br>
-                                            <p>Esqueceu a senha? Clique<a href="${cp}/recuperar_senha.html"> aqui</a></p>
-                                            <p>Não faz parte da nossa plataforma? Registre-se<a href="${cp}/cpf_or_cnpj.html">
+                                            <p>Esqueceu a senha? Clique<a href="${cp}/recuperarSenha.jsp"> aqui</a></p>
+                                            <p>Não faz parte da nossa plataforma? Registre-se<a href="${cp}/tipoDeCadastro.jsp">
                                                     aqui</a></p>
                                         </span></div>
                                 </div>

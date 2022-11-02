@@ -1,6 +1,6 @@
 <%-- 
-    Document   : login.jsp
-    Created on : 31 de out. de 2022, 22:17:13
+    Document   : recuperarSenha
+    Created on : 2 de nov. de 2022, 19:59:56
     Author     : Amanda e Lucas
 --%>
 
@@ -15,7 +15,7 @@
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <link rel="icon" type="image/jpg" href="${cp}/img/icon.png" />
-        <title>Login</title>
+        <title>Nova senha</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
 
         <!--Bootstrap-->
@@ -56,45 +56,37 @@
         <!-- Navbar end -->
 
 
-        <!-- Login Section Start -->
-        <section class="book_section login_section layout_padding">
+        <!-- Rec Password Section Start -->
+        <section class="book_section login_section layout_padding" id="form_rec_senha">
             <div class="container_login">
                 <div class="heading_container">
                     <h2>
-                        Login
+                        Cadastre a nova senha
                     </h2>
                 </div>
                 <div class="row">
                     <div class="form_container">
                         <form class="form_login" action="">
                             <div>
-                                <input type="email" class="form-control" placeholder="E-mail" />
+                                <label for="">Nova senha:</label>
+                                <input type="password" class="form-control" placeholder="" />
                             </div>
                             <div>
-                                <input type="password" class="form-control" placeholder="Senha" />
+                                <label for="">Confirme a nova senha:</label>
+                                <input type="password" class="form-control" placeholder="" />
                             </div>
                             <div>
 
                                 <div class="btn_box">
-                                    <a href="${cp}/perfil_pf.html"><button type="button" class="btn btn-primary btn-block mb-4">Entrar</button></a>
+                                    <button type="button" class="btn btn-primary btn-block mb-4">Confirmar</button>
                                 </div>
-
-                                <div class="text-center">
-                                    <div class=""><span>
-                                            <br>
-                                            <p>Esqueceu a senha? Clique<a href="${cp}/recuperarSenha.jsp"> aqui</a></p>
-                                            <p>Não faz parte da nossa plataforma? Registre-se<a href="${cp}/tipoDeCadastro.jsp">
-                                                    aqui</a></p>
-                                        </span></div>
-                                </div>
-
                         </form>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Login Section End-->
+        <!-- Rec password Section End-->
 
         <!--Footer Start-->
         <div class="footer">
