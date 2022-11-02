@@ -36,7 +36,7 @@
     <nav class="navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header logo">
-                <a class="navbar-brand" href="${cp}/index.html">PlaceR</a>
+                <a class="navbar-brand" href="${cp}/index.jsp">PlaceR</a>
             </div>
             <!--
        <ul class="nav navbar-nav">  
@@ -46,7 +46,7 @@
       </ul>
     -->
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="${cp}/login.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                <li><a href="${cp}/login.jsp"><span class="glyphicon glyphicon-user"></span></a></li>
                 <!-- Depois de logado:
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
         -->
@@ -76,7 +76,7 @@
                             <input class="button_c button_cnpj" type="button" value="Desejo cadastrar meu negócio!">
                         </a>
                         <br>
-                        <a href="formulario_evento.html" class="modal_cpfcnpj">
+                        <a href="cadastroEvento.jsp" class="modal_cpfcnpj">
                             <input class="button_c button_eventos" type="button" value="Desejo cadastrar um evento!">
                         </a>
                     </form>

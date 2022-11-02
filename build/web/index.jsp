@@ -35,7 +35,7 @@
         <nav class="navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header logo">
-                    <a class="navbar-brand" href="${cp}/index.html">PlaceR</a>
+                    <a class="navbar-brand" href="${cp}/index.jsp">PlaceR</a>
                 </div>
                 <!--
                  <ul class="nav navbar-nav">  
@@ -116,13 +116,13 @@
                             <div class="box">
                                 <div>
                                     <div class="img-box">
-                                        <a href="info_local_geral.html">
+                                        <a href="info_local_geral.jsp">
                                             <img src="${cp}/img/quintal.png" alt="">
                                         </a>
                                     </div>
                                     <div class="detail-box">
                                         <h5>
-                                            <a href="${cp}/info_local.html">
+                                            <a href="${cp}/info_local.jsp">
                                                 Quintal Bar
                                             </a>
                                         </h5>
@@ -134,7 +134,7 @@
                             <div class="box">
                                 <div>
                                     <div class="img-box">
-                                        <a href="${cp}/info_local_curral.html">
+                                        <a href="${cp}/info_local_curral.jsp">
                                             <img src="${cp}/img/CurralBar.png" alt="">
                                         </a>
                                     </div>
@@ -188,7 +188,7 @@
                             <div class="box">
                                 <div>
                                     <div class="img-box">
-                                        <a href="info_local_sem_reserva.html">
+                                        <a href="info_local_sem_reserva.jsp">
                                             <img src="${cp}/img/img_comidaria.jpg" alt="">
                                         </a>
                                     </div>
@@ -206,7 +206,7 @@
                             <div class="box">
                                 <div>
                                     <div class="img-box">
-                                        <a href="info_local_evento.html">
+                                        <a href="info_local_evento.jsp">
                                             <img src="${cp}/img/img_feirajunto_index.jpeg" alt="">
                                         </a>
                                     </div>
