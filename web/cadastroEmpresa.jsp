@@ -70,23 +70,33 @@
                             <form action="">
                                 <div>
                                     <label for="">Nome da empresa</label>
-                                    <input type="text" class="form-control" placeholder="" />
+                                    <input type="text" class="form-control" 
+                                           placeholder=""
+                                           maxlength="64"/>
                                 </div>
                                 <div>
                                     <label for="">CNPJ</label>
-                                    <input type="number" class="form-control" placeholder="XX. XXX. XXX/0001-XX." />
+                                    <input type="number" class="form-control" 
+                                           placeholder="XX. XXX. XXX/0001-XX."
+                                           length="18"/>
                                 </div>
                                 <div>
                                     <label for="">Telefone para contato</label>
-                                    <input type="number" class="form-control" placeholder="(00) 90000-0000" />
+                                    <input type="number" class="form-control" 
+                                           placeholder="(00) 90000-0000"
+                                           length="14"/>
                                 </div>
                                 <div>
                                     <label for="">CEP</label>
-                                    <input type="number" class="form-control" placeholder="00000-000" />
+                                    <input type="number" class="form-control" 
+                                           placeholder="00000-000"
+                                           length="9"/>
                                 </div>
                                 <div>
                                     <label for="">Endereço</label>
-                                    <input type="text" class="form-control" placeholder="" />
+                                    <input type="text" class="form-control" 
+                                           placeholder=""
+                                           maxlength="255"/>
                                 </div>
                                 <div>
                                     <label for="">Classificação</label>
@@ -105,11 +115,17 @@
                                 </div>
                                 <div>
                                     <label for="">Senha</label>
-                                    <input type="password" class="form-control" placeholder="" />
+                                    <input type="password" class="form-control" 
+                                           placeholder="" 
+                                           minlength="8"
+                                           maxlength="16"/>
                                 </div>
                                 <div>
                                     <label for="">Confirme sua senha</label>
-                                    <input type="password" class="form-control" placeholder="" />
+                                    <input type="password" class="form-control" 
+                                           placeholder="" 
+                                           minlength="8"
+                                           maxlength="16"/>
                                 </div>
                                 <div>
                                     <label for="">Imagem da sua empresa: </label>

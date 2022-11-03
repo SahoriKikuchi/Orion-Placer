@@ -70,15 +70,17 @@
                         <form action="">
                             <div>
                                 <label for="">Nome completo</label>
-                                <input type="text" class="form-control" placeholder="" />
+                                <input type="text" class="form-control" placeholder="" maxlength="64"/>
                             </div>
+                            <!-- comment 
                             <div>
                                 <label for="">CPF</label>
-                                <input type="text" class="form-control" placeholder="XXX.XXX.XXX-X" />
+                                <input type="text" class="form-control" placeholder="XXX.XXX.XXX-X"  />
                             </div>
+                            -->
                             <div>
                                 <label for="">E-mail</label>
-                                <input type="email" class="form-control" placeholder="" />
+                                <input type="email" class="form-control" placeholder="" maxlength="255" />
                             </div>
                             <div>
                                 <label for="">Data de Nascimento:</label>
@@ -90,11 +92,17 @@
                             </div>
                             <div>
                                 <label for="">Senha</label>
-                                <input type="password" class="form-control" placeholder="" />
+                                <input type="password" class="form-control" 
+                                       placeholder="" 
+                                       minlength="8"
+                                       maxlength="16"/>
                             </div>
                             <div>
                                 <label for="">Confirme sua senha</label>
-                                <input type="password" class="form-control" placeholder="" />
+                                <input type="password" class="form-control" 
+                                       placeholder="" 
+                                       minlength="8"
+                                       maxlength="16"/>
                             </div>
                             <div class="btn_box">
                                 <button> Cadastrar </button>
