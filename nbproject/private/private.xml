@@ -3,9 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/src/java/cadastroslocais/jdbc/ConnectionFactory.java</file>
+            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/cadastroEvento.jsp</file>
+            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/cadastroEmpresa.jsp</file>
+            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/recuperarSenha.jsp</file>
             <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/login.jsp</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/index.jsp</file>
+            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/tipoDeCadastro.jsp</file>
         </group>
     </open-files>
 </project-private>

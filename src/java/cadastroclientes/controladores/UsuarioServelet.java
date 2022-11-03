@@ -4,7 +4,7 @@
  */
 package cadastroclientes.controladores;
 
-import cadastroclientes.dao.EmpresaDAO;
+import cadastroclientes.dao.UsuarioDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -18,8 +18,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author amand
  */
-@WebServlet(name = "EmpresaServlet", urlPatterns = {"/processaEmpresa"})
-public class EmpresaServlet extends HttpServlet {
+@WebServlet(name = "UsuarioServlet", urlPatterns = {"/processaUsuario"})
+public class UsuarioServelet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -32,9 +32,11 @@ public class EmpresaServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String acao = request.getParameter("acao");
-        EmpresaDAO dao = null;
+        String acao = request.getParameter( "acao" );
+        UsuarioDAO dao = null;
         RequestDispatcher disp = null;
+        
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -73,7 +75,7 @@ public class EmpresaServlet extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "EmpresaServlet";
+        return "UsuarioServlet";
     }// </editor-fold>
 
 }
