@@ -4,7 +4,7 @@
  */
 package cadastroclientes.entidades;
 
-import java.io.File;
+import java.sql.Blob;
 
 /**
  *
@@ -14,7 +14,7 @@ public class Empresa {
 
     private int id;
     private String nomeEmpresa;
-    private int cnpj;
+    private String cnpj;
     private int numeroDeTelefone;
     private int cep;
     private String endereco;
@@ -22,7 +22,7 @@ public class Empresa {
     private String email;
     private String senha;
     private String confirmarSenha;
-    private File imagem;
+    private Blob imagem;
 
     public int getId() {
         return id;
@@ -40,11 +40,11 @@ public class Empresa {
         this.nomeEmpresa = nomeEmpresa;
     }
 
-    public int getCnpj() {
+    public String getCnpj() {
         return cnpj;
     }
 
-    public void setCnpj(int cnpj) {
+    public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
     }
 
@@ -104,11 +104,11 @@ public class Empresa {
         this.confirmarSenha = confirmarSenha;
     }
 
-    public File getImagem() {
+    public Blob getImagem() {
         return imagem;
     }
 
-    public void setImagem(File imagem) {
+    public void setImagem(Blob imagem) {
         this.imagem = imagem;
     }
 

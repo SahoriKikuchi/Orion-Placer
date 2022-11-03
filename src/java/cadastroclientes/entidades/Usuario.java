@@ -4,7 +4,7 @@
  */
 package cadastroclientes.entidades;
 
-import java.io.File;
+import java.sql.Blob;
 import java.sql.Date;
 
 /**
@@ -18,10 +18,18 @@ public class Usuario {
     private String cpf;
     private String email;
     private Date dataDeNascimento;
-    private File image;
+    private Blob image;
     private String senha;
     private String confirmarSenha;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    
     public String getNomeCompleto() {
         return nomeCompleto;
     }
@@ -54,11 +62,11 @@ public class Usuario {
         this.dataDeNascimento = dataDeNascimento;
     }
 
-    public File getImage() {
+    public Blob getImage() {
         return image;
     }
 
-    public void setImage(File image) {
+    public void setImage(Blob image) {
         this.image = image;
     }
 
