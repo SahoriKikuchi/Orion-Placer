@@ -32,31 +32,27 @@
     <body>
 
         <!-- Navbar start -->
-        <nav class="navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header logo">
-                    <a class="navbar-brand" href="${cp}/index.jsp">PlaceR</a>
-                </div>
-                <!--
-                 <ul class="nav navbar-nav">  
-                  <li class="active"><a href="#">Home</a></li>      
-                  <li><a href="#">Page 1</a></li>
-                  <li><a href="#">Page 2</a></li>    
-                </ul>
-                -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <div id="divBusca">
-                            <input type="text" id="txtBusca" placeholder="Buscar..."/>
-                        </div>
-                    </li>
-                    <li><a href="${cp}/login.jsp"><span class="glyphicon glyphicon-user"></span></a></li>
-                    <!-- Depois de logado:
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
-                    -->
-                </ul>
-            </div>
-        </nav>
+  <nav class="navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header logo">
+        <a class="navbar-brand" href="index.html">PlaceR</a>
+      </div>
+      <!--
+       <ul class="nav navbar-nav">  
+        <li class="active"><a href="#">Home</a></li>      
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>    
+      </ul>
+    -->
+      <ul class="nav navbar-nav navbar-right">
+     
+        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>
+        <!-- Depois de logado:
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
+        -->
+      </ul>
+    </div>
+  </nav>
         <!-- Navbar end -->
 
         <!-- Carrossel start -->
