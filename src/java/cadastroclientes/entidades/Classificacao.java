@@ -9,6 +9,7 @@ package cadastroclientes.entidades;
  * @author Amanda e Lucas
  */
 public class Classificacao {
+
     private int id;
     private String classificacao;
 
@@ -27,6 +28,5 @@ public class Classificacao {
     public void setClassificacao(String classificacao) {
         this.classificacao = classificacao;
     }
-    
-    
+
 }

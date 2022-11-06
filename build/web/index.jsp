@@ -225,6 +225,37 @@
             </div>
         </section>
         <!-- Local Section End -->
+        
+        <!-- pop up -->
+         <button></button>
+         <div class="popup-wrapper">
+            <div class="popup">
+                <div class="popup-close">x</div>
+                <div class="popup-content">
+                    <h2>Conheça Novos Eventos e Locais!</h2>
+                    <p>Nosso site mostra as melhores opçoes de diversão a você</p>
+                    
+                </div>
+            </div>
+        </div>
+         <script>
+             const button = document.querySelector('button');
+             const popup = document.querySelector('.popup-wrapper');         
+             const closeButton = document.querySelector('.popup-close');
+             
+             button.addEventListener('click', () => {
+             popup.style.display = 'block';
+             });
+
+             closeButton.addEventListener('click', () =>{
+             popup.style.display = 'none';
+             });
+
+             closeButton.addEventListener('click', () =>{
+             popup.style.display = 'none';
+             });
+         </script>
+         <!-- pop up section ends -->
 
         <!--Footer Start-->
         <div class="footer">

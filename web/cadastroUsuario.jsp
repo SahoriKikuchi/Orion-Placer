@@ -67,24 +67,24 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form_container">
-                        <form action="">
+                        <form action="" method="post" enctype="multipart/form-data">
                             <div>
                                 <label for="">Nome completo</label>
-                                <input type="text" class="form-control" placeholder="" maxlength="64"/>
+                                <input name = "nome" type="text" class="form-control" placeholder="" maxlength="64"/>
                             </div>
-                            <!-- comment 
+                            
                             <div>
                                 <label for="">CPF</label>
-                                <input type="text" class="form-control" placeholder="XXX.XXX.XXX-X"  />
+                                <input type="text" class="form-control" placeholder="XXX.XXX.XXX-X" name="cpf" />
                             </div>
-                            -->
+                            
                             <div>
                                 <label for="">E-mail</label>
-                                <input type="email" class="form-control" placeholder="" maxlength="255" />
+                                <input type="email" class="form-control" placeholder="" maxlength="255" name="email"/>
                             </div>
                             <div>
                                 <label for="">Data de Nascimento:</label>
-                                <input type="date" class="form-control" placeholder="" />
+                                <input type="date" class="form-control" placeholder="" name="dataDeNascimento" />
                             </div>
                             <div>
                                 <label for="">Imagem do perfil: </label>
@@ -95,14 +95,16 @@
                                 <input type="password" class="form-control" 
                                        placeholder="" 
                                        minlength="8"
-                                       maxlength="16"/>
+                                       maxlength="16"
+                                       name="senha"/>
                             </div>
                             <div>
                                 <label for="">Confirme sua senha</label>
                                 <input type="password" class="form-control" 
                                        placeholder="" 
                                        minlength="8"
-                                       maxlength="16"/>
+                                       maxlength="16"
+                                       name="cSenha"/>
                             </div>
                             <div class="btn_box">
                                 <button> Cadastrar </button>

@@ -15,6 +15,7 @@ import java.util.List;
  * @author Amanda e Lucas
  */
 public class EmpresaServices {
+
     public List<Empresa> getTodos() {
 
         List<Empresa> lista = new ArrayList<>();
@@ -23,13 +24,13 @@ public class EmpresaServices {
         try {
             dao = new EmpresaDAO();
             lista = dao.listarTodos();
-        } catch ( SQLException exc ) {
+        } catch (SQLException exc) {
             exc.printStackTrace();
         } finally {
-            if ( dao != null ) {
+            if (dao != null) {
                 try {
                     dao.fecharConexao();
-                } catch ( SQLException exc ) {
+                } catch (SQLException exc) {
                     exc.printStackTrace();
                 }
             }

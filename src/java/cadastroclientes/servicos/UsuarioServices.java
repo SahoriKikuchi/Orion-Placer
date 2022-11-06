@@ -15,6 +15,7 @@ import java.util.List;
  * @author Amanda E Lucas
  */
 public class UsuarioServices {
+
     /**
      * Usa o CidadeDAO para obter todos os Cidades.
      *
@@ -28,13 +29,13 @@ public class UsuarioServices {
         try {
             dao = new UsuarioDAO();
             lista = dao.listarTodos();
-        } catch ( SQLException exc ) {
+        } catch (SQLException exc) {
             exc.printStackTrace();
         } finally {
-            if ( dao != null ) {
+            if (dao != null) {
                 try {
                     dao.fecharConexao();
-                } catch ( SQLException exc ) {
+                } catch (SQLException exc) {
                     exc.printStackTrace();
                 }
             }
