@@ -72,35 +72,40 @@
                                     <label for="">Nome da empresa</label>
                                     <input type="text" class="form-control" 
                                            placeholder=""
-                                           maxlength="64"/>
+                                           maxlength="64"
+                                           name="nome"/>
                                 </div>
                                 <div>
                                     <label for="">CNPJ</label>
                                     <input type="number" class="form-control" 
-                                           placeholder="XX. XXX. XXX/0001-XX."
-                                           length="18"/>
+                                           placeholder="XX.XXX.XXX/0001-XX."
+                                           length="18"
+                                           name="cnpj"/>
                                 </div>
                                 <div>
                                     <label for="">Telefone para contato</label>
                                     <input type="number" class="form-control" 
                                            placeholder="(00) 90000-0000"
-                                           length="14"/>
+                                           length="14"
+                                           name="tel"/>
                                 </div>
                                 <div>
                                     <label for="">CEP</label>
                                     <input type="number" class="form-control" 
                                            placeholder="00000-000"
-                                           length="9"/>
+                                           length="9"
+                                           name="cep"/>
                                 </div>
                                 <div>
                                     <label for="">Endereço</label>
                                     <input type="text" class="form-control" 
                                            placeholder=""
-                                           maxlength="255"/>
+                                           maxlength="255"
+                                           name="endereco"/>
                                 </div>
                                 <div>
                                     <label for="">Classificação</label>
-                                    <select class="form-control nice-select wide">
+                                    <select class="form-control nice-select wide" name="classificacao">
                                         <option value="" disabled selected> Como você classifica a sua empresa? </option>
                                         <option value="1"> Pub & Bar </option>
                                         <option value="2"> Eventos Universitários </option>
@@ -111,21 +116,23 @@
                                 </div>
                                 <div>
                                     <label for="">E-mail</label>
-                                    <input type="email" class="form-control" placeholder="" />
+                                    <input type="email" class="form-control" placeholder="" name="email"/>
                                 </div>
                                 <div>
                                     <label for="">Senha</label>
                                     <input type="password" class="form-control" 
                                            placeholder="" 
                                            minlength="8"
-                                           maxlength="16"/>
+                                           maxlength="16"
+                                           name="senha"/>
                                 </div>
                                 <div>
                                     <label for="">Confirme sua senha</label>
                                     <input type="password" class="form-control" 
                                            placeholder="" 
                                            minlength="8"
-                                           maxlength="16"/>
+                                           maxlength="16"
+                                           name="cSenha"/>
                                 </div>
                                 <div>
                                     <label for="">Imagem da sua empresa: </label>

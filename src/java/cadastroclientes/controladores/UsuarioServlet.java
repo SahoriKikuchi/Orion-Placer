@@ -24,7 +24,7 @@ import javax.servlet.http.Part;
 
 /**
  *
- * @author amand
+ * @author Amanda e Lucas
  */
 @MultipartConfig
 @WebServlet(name = "UsuarioServlet", urlPatterns = {"/processaUsuario"})
