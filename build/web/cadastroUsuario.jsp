@@ -67,7 +67,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form_container">
-                        <form action="" method="post" enctype="multipart/form-data">
+                        <form action="${cp}/processaUsuario" method="post" enctype="multipart/form-data">
                             <div>
                                 <label for="">Nome completo</label>
                                 <input name = "nome" type="text" class="form-control" placeholder="" maxlength="64"/>

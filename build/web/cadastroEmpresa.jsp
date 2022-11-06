@@ -67,7 +67,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form_container">
-                            <form action="">
+                            <form action="${cp}/processaEmpresa" method="post" enctype="multipart/form-data">
                                 <div>
                                     <label for="">Nome da empresa</label>
                                     <input type="text" class="form-control" 

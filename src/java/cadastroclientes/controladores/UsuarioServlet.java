@@ -63,6 +63,7 @@ public class UsuarioServlet extends HttpServlet {
         String acao = request.getParameter("acao");
         UsuarioDAO dao = null;
         RequestDispatcher disp = null;
+        boolean certo = false;
 
         try {
 
@@ -72,6 +73,8 @@ public class UsuarioServlet extends HttpServlet {
 
                 String nome = request.getParameter("nome");
                 String cpf = request.getParameter("cpf");
+                cpf = cpf.replaceAll("[\\D]+$", " ");
+                cpf = cpf.trim();
                 String email = request.getParameter("email");
                 Date dataDeNascimento = Date.valueOf(request.getParameter("dataDeNascimento"));
                 String senha = request.getParameter("senha");
@@ -92,13 +95,18 @@ public class UsuarioServlet extends HttpServlet {
                 u.setDataDeNascimento(dataDeNascimento);
                 if (senha.equals(cSenha)) {
                     u.setSenha(senha);
+                    certo = true;
                 }
                 u.setImage(blob);
 
-                dao.salvar(u);
-
-                disp = request.getRequestDispatcher(
-                        "/formularios/cidades/listagem.jsp");
+                if (certo) {
+                    dao.salvar(u);
+                    disp = request.getRequestDispatcher(
+                            "/formularios/cidades/listagem.jsp");
+                } else {
+                    disp = request.getRequestDispatcher(
+                            "/formularios/cidades/erro.jsp");
+                }
 
             } else if (acao.equals("alterar")) {
 

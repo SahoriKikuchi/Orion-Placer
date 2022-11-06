@@ -63,6 +63,7 @@ public class EmpresaServlet extends HttpServlet {
         String acao = request.getParameter("acao");
         EmpresaDAO dao = null;
         RequestDispatcher disp = null;
+        boolean certo = false;
 
         try {
 
@@ -108,13 +109,18 @@ public class EmpresaServlet extends HttpServlet {
                 u.setEmail(email);
                 if (senha.equals(cSenha)) {
                     u.setSenha(senha);
+                    certo = true;
                 }
                 u.setImagem(blob);
 
-                dao.salvar(u);
-
-                disp = request.getRequestDispatcher(
-                        "/formularios/cidades/listagem.jsp");
+                if (certo) {
+                    dao.salvar(u);
+                    disp = request.getRequestDispatcher(
+                            "/formularios/cidades/listagem.jsp");
+                } else {
+                    disp = request.getRequestDispatcher(
+                            "/formularios/cidades/erro.jsp");
+                }
 
             } else if (acao.equals("alterar")) {
 
