@@ -31,10 +31,11 @@ public class EmpresaDAO extends DAO<Empresa> {
 
         stmt.setString(1, obj.getNomeEmpresa());
         stmt.setString(2, obj.getCnpj());
-        stmt.setInt(3, obj.getNumeroDeTelefone());
+        stmt.setString(3, obj.getNumeroDeTelefone());
         stmt.setInt(4, obj.getCep());
         stmt.setString(5, obj.getEndereco());
-        stmt.setInt(6, obj.getClassificacao().getId());
+//        stmt.setInt(6, obj.getClassificacao().getId());
+        stmt.setInt(6, 0);
         stmt.setString(7, obj.getEmail());
         stmt.setString(8, obj.getSenha());
         stmt.setBlob(9, obj.getImagem());
@@ -55,7 +56,7 @@ public class EmpresaDAO extends DAO<Empresa> {
                 + " id = ?;");
 
         stmt.setString(1, obj.getEmail());
-        stmt.setInt(2, obj.getNumeroDeTelefone());
+        stmt.setString(2, obj.getNumeroDeTelefone());
         stmt.setBlob(3, obj.getImagem());
         stmt.setInt(4, obj.getId());
 
@@ -111,7 +112,7 @@ public class EmpresaDAO extends DAO<Empresa> {
             e.setId(rs.getInt("idUsuario_pj"));
             e.setNomeEmpresa(rs.getString("nomeUsuario_pj"));
             e.setCnpj(rs.getString("cnpjUsuario_pj"));
-            e.setNumeroDeTelefone(rs.getInt("telefoneUsuario_pj"));
+            e.setNumeroDeTelefone(rs.getString("telefoneUsuario_pj"));
             e.setCep(rs.getInt("cepUsuario_pj"));
             e.setEndereco(rs.getString("enderecoUsuario_pj"));
             e.setEmail(rs.getString("emailUsuario_pj"));
@@ -166,7 +167,7 @@ public class EmpresaDAO extends DAO<Empresa> {
             e.setId(rs.getInt("idUsuario_pj"));
             e.setNomeEmpresa(rs.getString("nomeUsuario_pj"));
             e.setCnpj(rs.getString("cnpjUsuario_pj"));
-            e.setNumeroDeTelefone(rs.getInt("telefoneUsuario_pj"));
+            e.setNumeroDeTelefone(rs.getString("telefoneUsuario_pj"));
             e.setCep(rs.getInt("cepUsuario_pj"));
             e.setEndereco(rs.getString("enderecoUsuario_pj"));
             e.setEmail(rs.getString("emailUsuario_pj"));

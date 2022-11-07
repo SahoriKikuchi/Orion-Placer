@@ -8,18 +8,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="cp" value="${pageContext.request.contextPath}"/>
 
-<%User us = new User();
-    String login = request.getParameter("login");
-    String senha = request.getParameter("senha");
-    boolean status = us.verificarUsuario(login, senha);
-    
-    if(us.result = true){
-        out.println("Login feito com sucesso");
-    } else {
-        out.println("Deu ruim!");
-    }
 
-%>
 
 <!DOCTYPE html>
 <html>
@@ -139,3 +128,15 @@
     </body>
 
 </html>
+<%User us = new User();
+    String login = request.getParameter("login");
+    String senha = request.getParameter("senha");
+    boolean status = us.verificarUsuario(login, senha);
+    
+    if(status){
+        out.println("Login feito com sucesso");
+    } else {
+        out.println("Deu ruim!");
+    }
+
+%>

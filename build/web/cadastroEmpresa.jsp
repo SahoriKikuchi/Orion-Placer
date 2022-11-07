@@ -67,7 +67,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form_container">
-                            <form action="${cp}/processaEmpresa" method="post" enctype="multipart/form-data">
+                            <form action="${cp}/processaEmpresa" method="POST" enctype="multipart/form-data">
+                                <input type="hidden" name="acaoo" value="inserir">
                                 <div>
                                     <label for="">Nome da empresa</label>
                                     <input type="text" class="form-control" 
@@ -77,9 +78,9 @@
                                 </div>
                                 <div>
                                     <label for="">CNPJ</label>
-                                    <input type="number" class="form-control" 
+                                    <input type="text" class="form-control" 
                                            placeholder="XX.XXX.XXX/0001-XX."
-                                           length="18"
+                                           length="20"
                                            name="cnpj"/>
                                 </div>
                                 <div>
@@ -91,9 +92,9 @@
                                 </div>
                                 <div>
                                     <label for="">CEP</label>
-                                    <input type="number" class="form-control" 
+                                    <input type="text" class="form-control" 
                                            placeholder="00000-000"
-                                           length="9"
+                                           length="10"
                                            name="cep"/>
                                 </div>
                                 <div>

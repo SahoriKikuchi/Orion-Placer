@@ -17,6 +17,7 @@ import java.sql.Date;
 import java.sql.SQLException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -27,6 +28,7 @@ import javax.servlet.http.Part;
  *
  * @author amand
  */
+@MultipartConfig
 @WebServlet(name = "EmpresaServlet", urlPatterns = {"/processaEmpresa"})
 public class EmpresaServlet extends HttpServlet {
 
@@ -60,7 +62,8 @@ public class EmpresaServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String acao = request.getParameter("acao");
+        String acao = request.getParameter("acaoo");
+        System.out.println(acao);
         EmpresaDAO dao = null;
         RequestDispatcher disp = null;
         boolean certo = false;
@@ -77,46 +80,48 @@ public class EmpresaServlet extends HttpServlet {
 
                 telefone = telefone.replaceAll("[\\D]+$", " ");
                 telefone = telefone.trim();
-                int tel = Integer.parseInt(telefone);
+//                int tel = Integer.parseInt(telefone);
+                
 
                 String cep1 = request.getParameter("cep");
                 cep1 = cep1.replaceAll("[\\D]+$", " ");
+                cep1 = cep1.replaceAll("-", "");
                 cep1 = cep1.trim();
                 int cep = Integer.parseInt(cep1);
 
                 String endereco = request.getParameter("endereco");
-                Classificacao c = null;
-                c.setClassificacao(request.getParameter("classificacao"));
+//                Classificacao c = null;
+//                c.setClassificacao(request.getParameter("classificacao"));
                 String email = request.getParameter("email");
                 String senha = request.getParameter("senha");
                 String cSenha = request.getParameter("cSenha");
 //                String image = u.getParameter("arquivos");
 
-                Part part = request.getPart("arquivos");
-                String nomeArquivo = part.getSubmittedFileName();
-                String path = getServletContext().getRealPath("/" + "files" + File.separator + nomeArquivo);
-                InputStream is = part.getInputStream();
+//                Part part = request.getPart("arquivos");
+//                String nomeArquivo = part.getSubmittedFileName();
+//                String path = getServletContext().getRealPath("/" + "files" + File.separator + nomeArquivo);
+//                InputStream is = part.getInputStream();
 
-                uploadF(is, path);
+//                uploadF(is, path);
 
                 Empresa u = new Empresa();
                 u.setNomeEmpresa(nome);
                 u.setCnpj(cnpj);
-                u.setNumeroDeTelefone(tel);
+                u.setNumeroDeTelefone(telefone);
                 u.setCep(cep);
                 u.setEndereco(endereco);
-                u.setClassificacao(c);
+//                u.setClassificacao(c);
                 u.setEmail(email);
                 if (senha.equals(cSenha)) {
                     u.setSenha(senha);
                     certo = true;
                 }
-                u.setImagem(blob);
+//                u.setImagem(blob);
 
                 if (certo) {
                     dao.salvar(u);
                     disp = request.getRequestDispatcher(
-                            "/formularios/cidades/listagem.jsp");
+                            "/index.jsp");
                 } else {
                     disp = request.getRequestDispatcher(
                             "/formularios/cidades/erro.jsp");

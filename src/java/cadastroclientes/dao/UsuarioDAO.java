@@ -27,7 +27,7 @@ public class UsuarioDAO extends DAO<Usuario> {
         PreparedStatement stmt = getConnection().prepareStatement(
                 "INSERT INTO "
                 + "usuario_pf( nomeCompleto, CPF, dataDeNascimento, "
-                + "Email, senha, imagem) "
+                + "Email, senha, image) "
                 + "VALUES (?, ?, ?, ?, ?, ?);");
 
         stmt.setString(1, obj.getNomeCompleto());

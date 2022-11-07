@@ -24,7 +24,7 @@ public class ConnectionFactory {
         // a URL da base de dados, o usuário usado para conectar na base
         // e a senha deste usuário.
         return DriverManager.getConnection(
-                "jdbc:mariadb://localhost/mydb",
+                "jdbc:mariadb://localhost/orionbd",
                 "root",
                 "");
 

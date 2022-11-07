@@ -67,7 +67,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form_container">
-                        <form action="${cp}/processaUsuario" method="post" enctype="multipart/form-data">
+                        <form action="${cp}/processaUsuario" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="acao" value="inserir">
                             <div>
                                 <label for="">Nome completo</label>
                                 <input name = "nome" type="text" class="form-control" placeholder="" maxlength="64"/>
@@ -88,7 +89,7 @@
                             </div>
                             <div>
                                 <label for="">Imagem do perfil: </label>
-                                <input type="file" name="arquivos"  /><br>
+                                <input type="file" name="file"  /><br>
                             </div>
                             <div>
                                 <label for="">Senha</label>

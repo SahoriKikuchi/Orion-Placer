@@ -15,7 +15,7 @@ public class Empresa {
     private int id;
     private String nomeEmpresa;
     private String cnpj;
-    private int numeroDeTelefone;
+    private String numeroDeTelefone;
     private int cep;
     private String endereco;
     private Classificacao classificacao;
@@ -48,11 +48,11 @@ public class Empresa {
         this.cnpj = cnpj;
     }
 
-    public int getNumeroDeTelefone() {
+    public String getNumeroDeTelefone() {
         return numeroDeTelefone;
     }
 
-    public void setNumeroDeTelefone(int numeroDeTelefone) {
+    public void setNumeroDeTelefone(String numeroDeTelefone) {
         this.numeroDeTelefone = numeroDeTelefone;
     }
 
