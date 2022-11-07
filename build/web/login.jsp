@@ -81,26 +81,23 @@
                             <div>
                                 <input type="password" name="senha" class="form-control" placeholder="Senha" />
                             </div>
-                            
+                            <div id="messageS">
+                                <h3>Senha incorreta! Tente novamente</h3>
+                            </div>
                             <div>
 
                                 <div class="btn_box">
                                     <button class="btn btn-primary btn-block mb-4" id="conf">Entrar</button>
                                 </div>
-                                <div class="btn_box">
-                                <a href="#"></a>
-                                <a class="w" href="#open-modal" >
-                                    <button type="button" class="btn btn-primary btn-block mb-4">Enviar</button>
-                                </a>
-                                <br>
-                                <div id="open-modal" class="class-modal">
-                                    <div>
-                                        <div id="messageS">
-                                <h3>Senha incorreta! Tente novamente</h3>
-                            </div>
-                                    </div>
-                                </div>
-                            </div>
+                                <script>
+                                    var myInput = document.getElementById("conf");
+                                    var err = '<%=a%>';
+                                    if (err && myInput.onclick) {
+                                        document.getElementById("messageS").style.display = "none";
+                                    } else {
+                                        document.getElementById("messageS").style.display = "block";
+                                    }
+                                </script>
 
                                 <div class="text-center">
                                     <div class=""><span>
