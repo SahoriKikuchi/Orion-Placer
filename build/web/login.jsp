@@ -68,7 +68,7 @@
                 </div>
                 <div class="row">
                     <div class="form_container">
-                        <form class="form_login" action="">
+                        <form class="form_login" action="${cp}/check.jsp">
                             <div>
                                 <input type="email" name="login" class="form-control" placeholder="E-mail" />
                             </div>
@@ -78,7 +78,7 @@
                             <div>
 
                                 <div class="btn_box">
-                                    <a href="${cp}/perfil_pf.jsp"><button type="button" class="btn btn-primary btn-block mb-4">Entrar</button></a>
+                                    <button class="btn btn-primary btn-block mb-4">Entrar</button>
                                 </div>
 
                                 <div class="text-center">
@@ -128,15 +128,3 @@
     </body>
 
 </html>
-<%User us = new User();
-    String login = request.getParameter("login");
-    String senha = request.getParameter("senha");
-    boolean status = us.verificarUsuario(login, senha);
-    
-    if(status){
-        out.println("Login feito com sucesso");
-    } else {
-        out.println("Deu ruim!");
-    }
-
-%>
