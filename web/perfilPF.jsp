@@ -37,7 +37,7 @@
     <nav class="navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header logo">
-                <a class="navbar-brand" href="index_logado.html">PlaceR</a>
+                <a class="navbar-brand" href="index_logado.jsp">PlaceR</a>
             </div>
             <!--
        <ul class="nav navbar-nav">  
@@ -51,7 +51,7 @@
                 <li>
                 </li>
                 <li><a href=""><span class="glyphicon glyphicon-envelope"></span></a></li>
-                <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
+                <li><a href="index.jsp"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
             </ul>
         </div>
     </nav>
