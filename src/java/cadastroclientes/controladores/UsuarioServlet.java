@@ -136,7 +136,7 @@ public class UsuarioServlet extends HttpServlet {
                 dao.atualizar(u);
 
                 disp = request.getRequestDispatcher(
-                        "/formularios/cidades/listagem.jsp");
+                        "#");
 
             } else if (acao.equals("excluir")) {
 
@@ -148,7 +148,7 @@ public class UsuarioServlet extends HttpServlet {
                 dao.excluir(u);
 
                 disp = request.getRequestDispatcher(
-                        "/formularios/cidades/listagem.jsp");
+                        "#");
 
             } else {
 
@@ -158,10 +158,10 @@ public class UsuarioServlet extends HttpServlet {
 
                 if (acao.equals("prepararAlteracao")) {
                     disp = request.getRequestDispatcher(
-                            "/formularios/cidades/alterar.jsp");
+                            "#");
                 } else if (acao.equals("prepararExclusao")) {
                     disp = request.getRequestDispatcher(
-                            "/formularios/cidades/excluir.jsp");
+                            "#");
                 }
 
             }
