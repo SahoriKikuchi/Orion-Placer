@@ -124,7 +124,7 @@ public class EmpresaServlet extends HttpServlet {
                             "/index.jsp");
                 } else {
                     disp = request.getRequestDispatcher(
-                            "/formularios/cidades/erro.jsp");
+                            "#");
                 }
 
             } else if (acao.equals("alterar")) {
@@ -144,7 +144,7 @@ public class EmpresaServlet extends HttpServlet {
                 dao.atualizar(u);
 
                 disp = request.getRequestDispatcher(
-                        "/formularios/cidades/listagem.jsp");
+                        "#");
 
             } else if (acao.equals("excluir")) {
 
@@ -156,7 +156,7 @@ public class EmpresaServlet extends HttpServlet {
                 dao.excluir(u);
 
                 disp = request.getRequestDispatcher(
-                        "/formularios/cidades/listagem.jsp");
+                        "#");
 
             } else {
 
@@ -166,10 +166,10 @@ public class EmpresaServlet extends HttpServlet {
 
                 if (acao.equals("prepararAlteracao")) {
                     disp = request.getRequestDispatcher(
-                            "/formularios/cidades/alterar.jsp");
+                            "#");
                 } else if (acao.equals("prepararExclusao")) {
                     disp = request.getRequestDispatcher(
-                            "/formularios/cidades/excluir.jsp");
+                            "#");
                 }
 
             }
