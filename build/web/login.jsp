@@ -82,7 +82,7 @@
                                 <input type="password" name="senha" class="form-control" placeholder="Senha" />
                             </div>
                             <div id="messageS">
-                                <h3>Senha incorreta! Tente novamente</h3>
+                                <!-- <h3>Senha incorreta! Tente novamente</h3>-->
                             </div>
                             <div>
 

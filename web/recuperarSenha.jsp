@@ -66,14 +66,15 @@
                 </div>
                 <div class="row">
                     <div class="form_container">
-                        <form class="form_login" action="${cp}/processaUsuario">
+                        <form class="form_login" action="${cp}/processaSenha">
+                            <input type="hidden" name="email" value="${requestScope.getParameter("email")}">
                             <div>
                                 <label for="">Nova senha:</label>
-                                <input type="password" class="form-control" placeholder="" />
+                                <input type="password" class="form-control" placeholder="" name="senha"/>
                             </div>
                             <div>
                                 <label for="">Confirme a nova senha:</label>
-                                <input type="password" class="form-control" placeholder="" />
+                                <input type="password" class="form-control" placeholder="" name="cSenha" />
                             </div>
                             <div>
 

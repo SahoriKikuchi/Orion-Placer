@@ -32,6 +32,55 @@ public class User {
     public boolean pf = false;
     public boolean erro = true;
 
+    public boolean verificarSenha(String email, String senha) throws SQLException {
+        String sql = "";
+        String sqlpj = "";
+        Connection conn = conectarBD();
+        // SQL
+        sql = "UPDATE Email FROM usuario_pf "
+                + "SET senha = "
+                + "'"
+                + senha
+                + "' "
+                + "WHERE Email = "
+                + "'"
+                + email
+                + "';";
+
+        sqlpj = "SELECT email FROM usuario_pj "
+                + "WHERE email = "
+                + "SET senha = "
+                + "'"
+                + senha
+                + "' "
+                + "'"
+                + email
+                + "';";
+        try {
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            if (rs.next()) {
+                result = true;
+                pf = true;
+                erro = false;
+            }
+        } catch (Exception e) {
+        }
+        try {
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(sqlpj);
+            if (rs.next()) {
+                result = true;
+                pj = true;
+                erro = false;
+            }
+
+        } catch (Exception epj) {
+
+        }
+        return result;
+    }
+
     public boolean verificarUsuario(String login, String senha) throws SQLException {
         String sql = "";
         String sqlpj = "";
