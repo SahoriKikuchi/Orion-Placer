@@ -84,7 +84,7 @@
                                 <div class="text-center">
                                     <div class=""><span>
                                             <br>
-                                            <p>Esqueceu a senha? Clique<a href="${cp}/recuperarSenha.jsp"> aqui</a></p>
+                                            <p>Esqueceu a senha? Clique<a href="${cp}/envioEmailSenha.jsp"> aqui</a></p>
                                             <p>Não faz parte da nossa plataforma? Registre-se<a href="${cp}/tipoDeCadastro.jsp">
                                                     aqui</a></p>
                                         </span></div>

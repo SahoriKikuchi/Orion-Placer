@@ -69,7 +69,7 @@
                 <div class="form_container">
                     <form class="form_login" action="">
                         <div>
-                            <label for="">Insira seu e-mail ou número de telefone cadastrado:</label>
+                            <label for="">Insira seu e-mail: </label>
                             <input type="text" class="form-control" placeholder="" />
                         </div>
                         <div>
