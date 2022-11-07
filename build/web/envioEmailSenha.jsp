@@ -37,7 +37,7 @@
     <nav class="navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header logo">
-                <a class="navbar-brand" href="index.html">PlaceR</a>
+                <a class="navbar-brand" href="index.jsp">PlaceR</a>
             </div>
             <!--
        <ul class="nav navbar-nav">  
@@ -47,7 +47,7 @@
       </ul>
     -->
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>
+                <li><a href="login.jsp"><span class="glyphicon glyphicon-user"></span></a></li>
                 <!-- Depois de logado:
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
         -->
@@ -67,7 +67,7 @@
             </div>
             <div class="row">
                 <div class="form_container">
-                    <form class="form_login" action="">
+                    <form class="form_login" action="javamail.jsp">
                         <div>
                             <label for="">Insira seu e-mail: </label>
                             <input type="text" class="form-control" placeholder="" />

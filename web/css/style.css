@@ -69,6 +69,14 @@ nav {
 
 /*Navbar Section End*/
 
+/*Carrossel Start*/
+
+img{
+    width: 100%;
+}
+
+/*Carrossel End*/
+
 /*Reserve Section Start*/
 .book_section {
   position: relative;
@@ -714,6 +722,10 @@ margin: auto;
     margin: auto;
   }
 
+  
+  .item .active img{
+      width: 100%;
+  }
 
   .container-info-perfil-pj {
     display: flex;
