@@ -9,6 +9,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import cadastrosclientes.jdbc.ConnectionFactory;
 
 /**
  *
@@ -18,10 +19,9 @@ public class User {
 
     public Connection conectarBD() {
         Connection conn = null;
+
         try {
-            Class.forName("com.mysql.Driver.Manager").newInstance();
-            String url = "jdbc:mysql//127.0.0.1/test?user=root$password=";
-            conn = DriverManager.getConnection(url);
+            conn = ConnectionFactory.getConnection();
         } catch (Exception e) {
         }
         return conn;
@@ -36,7 +36,7 @@ public class User {
         String sqlpj = "";
         Connection conn = conectarBD();
         // SQL
-        sql = "SELECT email FROM usuario_pf "
+        sql = "SELECT Email FROM usuario_pf "
                 + "WHERE Email = "
                 + "'"
                 + login
@@ -47,7 +47,7 @@ public class User {
                 + "';";
 
         sqlpj = "SELECT email FROM usuario_pj "
-                + "WHERE Email = "
+                + "WHERE email = "
                 + "'"
                 + login
                 + "'"
@@ -58,27 +58,22 @@ public class User {
         try {
             Statement st = conn.createStatement();
             ResultSet rs = st.executeQuery(sql);
-
             if (rs.next()) {
                 result = true;
-                nome = rs.getString("nome");
                 pf = true;
-
             }
         } catch (Exception e) {
-            try {
-                Statement st = conn.createStatement();
-                ResultSet rs = st.executeQuery(sqlpj);
-                if (rs.next()) {
-                    result = true;
-                    nome = rs.getString("nome");
-                    pj = true;
-
-                }
-
-            } catch (Exception epj) {
-
+        }
+        try {
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery(sqlpj);
+            if (rs.next()) {
+                result = true;
+                pj = true;
             }
+
+        } catch (Exception epj) {
+
         }
         return result;
     }

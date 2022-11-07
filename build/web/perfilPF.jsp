@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <!--CSS-->
-    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='${cp}/css/style.css'>
     <script src='main.js'></script>
 </head>
 
@@ -37,7 +37,7 @@
     <nav class="navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header logo">
-                <a class="navbar-brand" href="index_logado.jsp">PlaceR</a>
+                <a class="navbar-brand" href="${cp}/index_logado.jsp">PlaceR</a>
             </div>
             <!--
        <ul class="nav navbar-nav">  
@@ -51,7 +51,7 @@
                 <li>
                 </li>
                 <li><a href=""><span class="glyphicon glyphicon-envelope"></span></a></li>
-                <li><a href="index.jsp"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
+                <li><a href="${cp}/index.jsp"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
             </ul>
         </div>
     </nav>
@@ -66,7 +66,7 @@
 
 
                 <a class="w" href="#open-modal">
-                        <img src="img/icones/icon-editar-branco.png" alt="">
+                        <img src="${cp}/img/icones/icon-editar-branco.png" alt="">
                 </div>
                 </a>
                 <br>
@@ -75,7 +75,8 @@
                         <a href="#fechar" title="Fechar" class="fechar">X</a>
                         <h2 class="class-modal-title">Edite suas informações!</h2>
 
-                        <forms class="modal-m ">
+                        <forms class="modal-m " action="/processaUsuario">
+                            <input type="hidden" name="acao" value="alterar">
                             <p>Foto</p>
                             <input type="file" name="arquivos" class="input-text"><br>
                             <p>E-mail</p>
