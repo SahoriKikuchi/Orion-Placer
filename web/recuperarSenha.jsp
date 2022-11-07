@@ -66,7 +66,7 @@
                 </div>
                 <div class="row">
                     <div class="form_container">
-                        <form class="form_login" action="">
+                        <form class="form_login" action="${cp}/processaUsuario">
                             <div>
                                 <label for="">Nova senha:</label>
                                 <input type="password" class="form-control" placeholder="" />
