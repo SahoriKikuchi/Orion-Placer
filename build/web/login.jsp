@@ -3,10 +3,23 @@
     Created on : 31 de out. de 2022, 22:17:13
     Author     : Amanda e Lucas
 --%>
-
+<%@page import="login.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="cp" value="${pageContext.request.contextPath}"/>
+
+<%User us = new User();
+    String login = request.getParameter("login");
+    String senha = request.getParameter("senha");
+    boolean status = us.verificarUsuario(login, senha);
+    
+    if(us.result = true){
+        out.println("Login feito com sucesso");
+    } else {
+        out.println("Deu ruim!");
+    }
+
+%>
 
 <!DOCTYPE html>
 <html>
@@ -68,10 +81,10 @@
                     <div class="form_container">
                         <form class="form_login" action="">
                             <div>
-                                <input type="email" class="form-control" placeholder="E-mail" />
+                                <input type="email" name="login" class="form-control" placeholder="E-mail" />
                             </div>
                             <div>
-                                <input type="password" class="form-control" placeholder="Senha" />
+                                <input type="password" name="senha" class="form-control" placeholder="Senha" />
                             </div>
                             <div>
 
