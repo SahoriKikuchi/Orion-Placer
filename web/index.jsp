@@ -91,7 +91,7 @@
         </div>
         <!-- Carrossel end -->
 
-        <!-- Local Section Start -->
+       <!-- Local Section Start -->
   <section class="menu_locais">
     <div class="container">
       <div class="titleCenter">
@@ -112,7 +112,7 @@
             <div class="box pub">
               
                 <div class="img-box">
-                  <a href="info_local_geral.html">
+                  <a href="info_local_geral.jsp">
                     <img src="img/quintal.png" alt="">
                   </a>
                 </div>
@@ -132,7 +132,7 @@
             <div class="box pub">
               <div>
                 <div class="img-box">
-                  <a href="info_local_curral.html">
+                  <a href="info_local_curral.jsp">
                     <img src="img/CurralBar.png" alt="">
                   </a>
                 </div>
@@ -150,7 +150,7 @@
             <div class="box event">
               <div>
                 <div class="img-box">
-                  <a href="">
+                  <a href="info_eapic.jsp">
                     <img src="img/img_eapic.jpg" alt="">
                   </a>
                 </div>
@@ -168,7 +168,7 @@
             <div class="box activity">
               <div>
                 <div class="img-box">
-                  <a href="">
+                  <a href="info_cinea.jsp">
                     <img src="img/img_cineA.png" alt="">
                   </a>
                 </div>
@@ -186,7 +186,7 @@
             <div class="box restaurant">
               <div>
                 <div class="img-box">
-                  <a href="info_local_sem_reserva.html">
+                  <a href="info_local_sem_reserva.jsp">
                     <img src="img/img_comidaria.jpg" alt="">
                   </a>
                 </div>
@@ -204,7 +204,7 @@
             <div class="box activity">
               <div>
                 <div class="img-box">
-                  <a href="info_local_evento.html">
+                  <a href="info_local_evento.jsp">
                     <img src="img/img_feirajunto_index.jpeg" alt="">
                   </a>
                 </div>
