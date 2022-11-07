@@ -63,19 +63,17 @@ public class ClassificacaoDAO extends DAO<Classificacao> {
     public List<Classificacao> listarTodos() throws SQLException {
         List<Classificacao> lista = new ArrayList<>();
         PreparedStatement stmt = getConnection().prepareStatement(
-                "SELECT * "
-                + "FROM"
-                + " classificacao "
-                + "ORDER BY classificacao;");
+                "SELECT * FROM classificacao;");
 
         ResultSet rs = stmt.executeQuery();
+        
 
         while (rs.next()) {
 
             Classificacao c = new Classificacao();
 
-            c.setId(rs.getInt("idClassificacao"));
-            c.setClassificacao(rs.getString("classificacaoClassificacao"));
+            c.setId(rs.getInt("id_classificacao"));
+            c.setClassificacao(rs.getString("classificacao"));
 
             lista.add(c);
 
