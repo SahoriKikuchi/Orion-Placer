@@ -11,9 +11,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.PrintWriter;
 import java.sql.Blob;
-import java.sql.Date;
 import java.sql.SQLException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -63,7 +61,6 @@ public class EmpresaServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String acao = request.getParameter("acaoo");
-        System.out.println(acao);
         EmpresaDAO dao = null;
         RequestDispatcher disp = null;
         boolean certo = false;
@@ -80,18 +77,16 @@ public class EmpresaServlet extends HttpServlet {
 
                 telefone = telefone.replaceAll("[\\D]+$", " ");
                 telefone = telefone.trim();
-//                int tel = Integer.parseInt(telefone);
-                
 
                 String cep1 = request.getParameter("cep");
                 cep1 = cep1.replaceAll("[\\D]+$", " ");
                 cep1 = cep1.replaceAll("-", "");
                 cep1 = cep1.trim();
                 int cep = Integer.parseInt(cep1);
-
                 String endereco = request.getParameter("endereco");
-//                Classificacao c = null;
-//                c.setClassificacao(request.getParameter("classificacao"));
+                
+                Classificacao c = new Classificacao();
+                c.setClassificacao(request.getParameter("classificacao"));
                 String email = request.getParameter("email");
                 String senha = request.getParameter("senha");
                 String cSenha = request.getParameter("cSenha");
@@ -110,8 +105,9 @@ public class EmpresaServlet extends HttpServlet {
                 u.setNumeroDeTelefone(telefone);
                 u.setCep(cep);
                 u.setEndereco(endereco);
-//                u.setClassificacao(c);
+                u.setClassificacao(c);
                 u.setEmail(email);
+                
                 if (senha.equals(cSenha)) {
                     u.setSenha(senha);
                     certo = true;

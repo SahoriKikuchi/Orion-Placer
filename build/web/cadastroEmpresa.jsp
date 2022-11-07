@@ -105,14 +105,23 @@
                                            name="endereco"/>
                                 </div>
                                 <div>
+
                                     <label for="">Classificação</label>
-                                    <select class="form-control nice-select wide" name="classificacao">
-                                        <option value="" disabled selected> Como você classifica a sua empresa? </option>
+                                    <jsp:useBean
+                                        id="servicos"
+                                        scope="page"
+                                        class="cadastroclientes.servicos.ClassificacaoServices"/>
+                                    <select class="form-control nice-select wide" name="idClassificacao" required>
+                                        <c:forEach items="${servicos.todos}" var="classificacao">
+                                            <option value="${classificacao.id}">
+                                                ${classificacao.classificacao}
+                                            </option>
+                                        </c:forEach>
+<!--                                        <option value="" disabled selected> Como você classifica a sua empresa? </option>
                                         <option value="1"> Pub & Bar </option>
                                         <option value="2"> Eventos Universitários </option>
                                         <option value="3"> Restaurantes </option>
-                                        <option value="4"> Atividade Recreativa </option>
-                                        <option value="5"> Outro </option>
+                                        <option value="4"> Atividade Recreativa </option>-->
                                     </select>
                                 </div>
                                 <div>

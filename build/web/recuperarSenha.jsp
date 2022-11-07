@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="cp" value="${pageContext.request.contextPath}"/>
+<c:set var="names" value="${paramValues.email}"/>
 
 <!DOCTYPE html>
 <html>
@@ -67,7 +68,7 @@
                 <div class="row">
                     <div class="form_container">
                         <form class="form_login" action="${cp}/processaSenha">
-                            <input type="hidden" name="email" value="${requestScope.getParameter("email")}">
+                            <input type="hidden" name="email" value="${names[0]}">
                             <div>
                                 <label for="">Nova senha:</label>
                                 <input type="password" class="form-control" placeholder="" name="senha"/>
@@ -79,7 +80,7 @@
                             <div>
 
                                 <div class="btn_box">
-                                    <button type="button" class="btn btn-primary btn-block mb-4">Confirmar</button>
+                                    <button class="btn btn-primary btn-block mb-4">Confirmar</button>
                                 </div>
                         </form>
                     </div>

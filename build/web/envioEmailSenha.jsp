@@ -88,6 +88,7 @@
                                             <div class="modal-m ">
                                                 <br>
                                                 <p>Verifique sua caixa de entrada!</p>
+                                                <button class="btn btn-primary btn-block mb-4"> Ok </button>
                                             </div>
                                         </div>
                                     </div> 
