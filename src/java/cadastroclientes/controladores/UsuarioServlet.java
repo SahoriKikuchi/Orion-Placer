@@ -116,7 +116,7 @@ public class UsuarioServlet extends HttpServlet {
                             "/index.jsp");
                 } else {
                     disp = request.getRequestDispatcher(
-                            "/formularios/cidades/erro.jsp");
+                            "/erro.jsp");
                 }
 
             } else if (acao.equals("alterar")) {

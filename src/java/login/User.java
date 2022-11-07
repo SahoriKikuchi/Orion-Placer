@@ -28,6 +28,8 @@ public class User {
     }
     public String nome = "";
     public boolean result = false;
+    public boolean pj = false;
+    public boolean pf = false;
 
     public boolean verificarUsuario(String login, String senha) throws SQLException {
         String sql = "";
@@ -60,6 +62,7 @@ public class User {
             if (rs.next()) {
                 result = true;
                 nome = rs.getString("nome");
+                pf = true;
 
             }
         } catch (Exception e) {
@@ -69,6 +72,7 @@ public class User {
                 if (rs.next()) {
                     result = true;
                     nome = rs.getString("nome");
+                    pj = true;
 
                 }
 
