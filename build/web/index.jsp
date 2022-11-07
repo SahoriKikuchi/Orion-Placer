@@ -112,14 +112,14 @@
             <div class="box pub">
               
                 <div class="img-box">
-                  <a href="info_local_geral.html">
+                  <a href="info_local_geral.jsp">
                     <img src="img/quintal.png" alt="">
                   </a>
                 </div>
                   
                 <div class="detail-box">
                   <h5>
-                    <a href="info_local.html">
+                    <a href="info_local.jsp">
                       Quintal Bar
                     </a>
                   </h5>
@@ -132,7 +132,7 @@
             <div class="box pub">
               <div>
                 <div class="img-box">
-                  <a href="info_local_curral.html">
+                  <a href="info_local_curral.jsp">
                     <img src="img/CurralBar.png" alt="">
                   </a>
                 </div>
@@ -186,7 +186,7 @@
             <div class="box restaurant">
               <div>
                 <div class="img-box">
-                  <a href="info_local_sem_reserva.html">
+                  <a href="eventos/info_local_sem_reserva.jsp">
                     <img src="img/img_comidaria.jpg" alt="">
                   </a>
                 </div>
@@ -204,7 +204,7 @@
             <div class="box activity">
               <div>
                 <div class="img-box">
-                  <a href="info_local_evento.html">
+                  <a href="info_local_evento.jsp">
                     <img src="img/img_feirajunto_index.jpeg" alt="">
                   </a>
                 </div>
@@ -254,6 +254,51 @@
              });
          </script>
          <!-- pop up section ends -->
+        
+        <!-- filtro categorias -->
+         <script>
+        $('.filter-btn').on('click', function() {
+
+         let type = $(this).attr('id');
+         let boxes = $('.box');
+
+        $('.filter-btn').removeClass('active');
+        $(this).addClass('active');
+
+          if(type == 'pub-btn') {
+         eachBoxes('pub', boxes);
+    } else if(type == 'restaurant-btn') {
+      eachBoxes('restaurant', boxes);
+    } else if(type == 'activity-btn') {
+      eachBoxes('activity', boxes);
+    } else if(type == 'party-btn') {
+      eachBoxes('pary', boxes);
+    } else if(type == 'event-btn') {
+      eachBoxes('event', boxes);
+    } else {
+      eachBoxes('all', boxes);
+    }
+    
+  });
+
+  function eachBoxes(type, boxes) {
+
+    if(type == 'all') {
+      $(boxes).fadeIn();
+    } else {
+      $(boxes).each(function() {
+        if(!$(this).hasClass(type)) {
+          $(this).fadeOut('slow');
+        } else {
+          $(this).fadeIn();
+        }
+      });
+    }
+  }
+  </script>
+        
+  <!-- filtro categorias ends -->
+        
 
         <!--Footer Start-->
         <div class="footer">

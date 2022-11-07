@@ -1,6 +1,6 @@
 <%-- 
-    Document   : info_local_eventos
-    Created on : 7 de nov. de 2022, 18:15:27
+    Document   : info_local_curral
+    Created on : 7 de nov. de 2022, 18:49:07
     Author     : amand
 --%>
 
@@ -15,7 +15,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <link rel="icon" type="image/jpg" href="img/icon.png" />
-    <title>Feira Juntô</title>
+    <title>Curral Steak Bar</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
     <!--Bootstrap-->
@@ -40,7 +40,7 @@
     <nav class="navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header logo">
-                <a class="navbar-brand" href="index.html">PlaceR</a>
+                <a class="navbar-brand" href="index.jsp">PlaceR</a>
             </div>
             <!--
        <ul class="nav navbar-nav">  
@@ -63,34 +63,29 @@
     <section class="info_section">
         <div class="container-info">
             <div class="box-i box-1">
-                <h3>Feira Juntô</h3>
+                <h3>Curral Steak Bar</h3>
                 <div class="size-img-inf">
-                <img src="img/img_feirajunto_evento.jpeg" alt="">
+                <img src="img/CurralBar.png" alt="">
                 </div>
             </div>
             <div class="box-i box-2">
                 <h3>Informações</h3>
                 <div>
-                    <p style="font-size: 12px;">Feira com expositores de artesanato se unindo a gastronomia, música, cultura e boas energias.</p>
+                    <p style="font-size: 12px;">O menu deste pub & bar é recomendado para os amantes da culinária. Espere um ambiente acolhedor neste pub & bar. Pub & bar Quintal tem classificação 4.6 no sistema de avaliação do Google.</p>
                 </div>
-                <h4>Organizador</h4>
-                <p style="font-size: 12px;">Leonardo dos Reis</p>
-                <h4>Data</h4>
-                <p style="font-size: 12px;">09 e 10 de Julho de 2022</p>
                 <h4>Endereço:</h4>
-                <p style="font-size: 12px;">Praça da Catedral - Centro, São João da Boa Vista - SP, 13870-120</p>
+                <p style="font-size: 12px;">Av. Rodrigues Alves, 773 - Vila Trafani, São João da Boa Vista - SP, 13874-044</p>
                 <div class="size-img-inf">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14800.3725179627!2d-46.80716352954627!3d-21.96938851720925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9cb64f40d7e31%3A0x143e281b1758dead!2sPra%C3%A7a%20da%20Catedral%20-%20Centro%2C%20S%C3%A3o%20Jo%C3%A3o%20da%20Boa%20Vista%20-%20SP%2C%2013870-120!5e0!3m2!1spt-BR!2sbr!4v1656543209381!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.233739384366!2d-46.793035385051226!3d-21.96399048549929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9cbe6afa7142f%3A0xfdc91eff9a549fe6!2sCurral%20Steak%20Bar!5e0!3m2!1spt-BR!2sbr!4v1656644681333!5m2!1spt-BR!2sbr" width="600" height="450" style="width: 100%; height: 300px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                </div>
              </div>
             <div class="box-i box-3">
                 <h4>Avalie-nos</h4>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <p class="avaliacao">Classificação de 5 baseado em 137 avaliações</p>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p class="avaliacao">Classificação de 4.1 baseado em 254 avaliações</p>
 
             </div>
                 <!--Se for um restaurante havera o botão de reservar-->

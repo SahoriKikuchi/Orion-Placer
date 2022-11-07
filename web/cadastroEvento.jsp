@@ -92,12 +92,34 @@
                                 <input type="text" class="form-control" placeholder=""/>
                             </div>
                             <div>
+                                <label for="">E-mail para contato:</label>
+                                <input type="email" class="form-control" placeholder=""/>
+                            </div>
+                            <div>
                                 <label for="">Informações adicionais sobre o evento:</label>
                                 <textarea type="text" class="form-control" placeholder="Observações"> </textarea>
                             </div>
-                        
+                        <!--BoxStart-->
+                                <div class="btn_box">
+                                    <a href="#"></a>
+                                    
+                                    <br>
+                                    <div id="open-modal" class="class-modal">
+                                        <div>
+                                            <a href="#fechar" title="Fechar" class="fechar">X</a>
+                                            <h2 class="class-modal-title">Entraremos em contato!</h2>
+                                            <div class="modal-m ">
+                                                <br>
+                                                <p>Iremos analisar a sua proposta de evento para a região, entraremos em contato para obtermos mais informações! Fique atento ao seu e-mail.</p>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <!--BoxEnd-->  
                             <div class="btn_box">
-                                <button> Enviar para análise </button>
+                               <a class="w" href="#open-modal" >
+                                        <button type="button" class="btn btn-primary btn-block mb-4">Enviar para análise</button>
+                                    </a>
                             </div>
                         </form>
                     </div>
