@@ -31,33 +31,29 @@
 
     <body>
 
-        <!-- Navbar start -->
-        <nav class="navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header logo">
-                    <a class="navbar-brand" href="${cp}/index.jsp">PlaceR</a>
-                </div>
-                <!--
-                 <ul class="nav navbar-nav">  
-                  <li class="active"><a href="#">Home</a></li>      
-                  <li><a href="#">Page 1</a></li>
-                  <li><a href="#">Page 2</a></li>    
-                </ul>
-                -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <div id="divBusca">
-                            <input type="text" id="txtBusca" placeholder="Buscar..."/>
-                        </div>
-                    </li>
-                    <li><a href="${cp}/login.jsp"><span class="glyphicon glyphicon-user"></span></a></li>
-                    <!-- Depois de logado:
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
-                    -->
-                </ul>
-            </div>
-        </nav>
-        <!-- Navbar end -->
+         <!-- Navbar start -->
+     <nav class="navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header logo">
+        <a class="navbar-brand" href="index.html">PlaceR</a>
+      </div>
+      <!--
+       <ul class="nav navbar-nav">  
+        <li class="active"><a href="#">Home</a></li>      
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>    
+      </ul>
+    -->
+      <ul class="nav navbar-nav navbar-right">
+     
+        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span></a></li>
+        <!-- Depois de logado:
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sair</a></li>
+        -->
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar end -->
 
         <!-- Carrossel start -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -96,135 +92,137 @@
         <!-- Carrossel end -->
 
         <!-- Local Section Start -->
-        <section class="menu_locais">
-            <div class="container">
-                <div class="titleCenter">
-                    <h2>Nossos locais</h2>
-                </div>
-                <ul class="filter_menu">
-                    <li class="active" data-filter="*">Todos</li>
-                    <li data-filter=".bares">Pubs & Bares</li>
-                    <li data-filter=".universitarios">Festas Universitárias</li>
-                    <li data-filter=".restaurantes">Restaurantes</li>
-                    <li data-filter=".eventos">Eventos</li>
-                    <li data-filter=".recreacao">Atividade Recriativa</li>
+  <section class="menu_locais">
+    <div class="container">
+      <div class="titleCenter">
+        <h2>Nossos locais</h2>
+      </div>
+      <div class="filter_menu" id="filter-box">
+        <button class="filter-btn active" data-filter="*" id="all-btn">Todos</button>
+        <button class="filter-btn" data-filter=".bares" id="pub-btn">Pubs & Bares</button>
+        <button class="filter-btn" data-filter=".universitarios" id="party-btn">Festas Universitárias</button>
+        <button class="filter-btn" data-filter=".restaurantes" id="restaurant-btn">Restaurantes</button>
+        <button class="filter-btn" data-filter=".eventos" id="event-btn">Eventos</button>
+        <button class="filter-btn" data-filter=".recreacao" id="activity-btn">Atividade Recriativa</button>
 
-                </ul>
-                <div class="filters-content">
-                    <div class="row grid" style="position: relative; height: 80%;">
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="box">
-                                <div>
-                                    <div class="img-box">
-                                        <a href="info_local_geral.jsp">
-                                            <img src="${cp}/img/quintal.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="detail-box">
-                                        <h5>
-                                            <a href="${cp}/info_local.jsp">
-                                                Quintal Bar
-                                            </a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="box">
-                                <div>
-                                    <div class="img-box">
-                                        <a href="${cp}/info_local_curral.jsp">
-                                            <img src="${cp}/img/CurralBar.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="detail-box">
-                                        <h5>
-                                            <a href="#">
-                                                Curral Steak Bar
-                                            </a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="box">
-                                <div>
-                                    <div class="img-box">
-                                        <a href="">
-                                            <img src="${cp}/img/img_eapic.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="detail-box">
-                                        <h5>
-                                            <a href="">
-                                                Eapic
-                                            </a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="box">
-                                <div>
-                                    <div class="img-box">
-                                        <a href="">
-                                            <img src="${cp}/img/img_cineA.png" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="detail-box">
-                                        <h5>
-                                            <a href="">
-                                                Cine A
-                                            </a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="box">
-                                <div>
-                                    <div class="img-box">
-                                        <a href="info_local_sem_reserva.jsp">
-                                            <img src="${cp}/img/img_comidaria.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="detail-box">
-                                        <h5>
-                                            <a href="#">
-                                                Comidaria
-                                            </a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4">
-                            <div class="box">
-                                <div>
-                                    <div class="img-box">
-                                        <a href="info_local_evento.jsp">
-                                            <img src="${cp}/img/img_feirajunto_index.jpeg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="detail-box">
-                                        <h5>
-                                            <a href="#">
-                                                Feira Juntô
-                                            </a>
-                                        </h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      </div>
+      <div class="filters-content">
+        <div class="row grid" style="position: relative; height: 80%;">
+          <div class="col-sm-6 col-lg-4">
+            <div class="box pub">
+              
+                <div class="img-box">
+                  <a href="info_local_geral.html">
+                    <img src="img/quintal.png" alt="">
+                  </a>
                 </div>
+                  
+                <div class="detail-box">
+                  <h5>
+                    <a href="info_local.html">
+                      Quintal Bar
+                    </a>
+                  </h5>
+                </div>
+              
             </div>
-        </section>
-        <!-- Local Section End -->
+          </div>
+            
+          <div class="col-sm-6 col-lg-4">
+            <div class="box pub">
+              <div>
+                <div class="img-box">
+                  <a href="info_local_curral.html">
+                    <img src="img/CurralBar.png" alt="">
+                  </a>
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="#">
+                      Curral Steak Bar
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="box event">
+              <div>
+                <div class="img-box">
+                  <a href="">
+                    <img src="img/img_eapic.jpg" alt="">
+                  </a>
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="">
+                      Eapic
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="box activity">
+              <div>
+                <div class="img-box">
+                  <a href="">
+                    <img src="img/img_cineA.png" alt="">
+                  </a>
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="">
+                      Cine A
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="box restaurant">
+              <div>
+                <div class="img-box">
+                  <a href="info_local_sem_reserva.html">
+                    <img src="img/img_comidaria.jpg" alt="">
+                  </a>
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="#">
+                      Comidaria
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="box activity">
+              <div>
+                <div class="img-box">
+                  <a href="info_local_evento.html">
+                    <img src="img/img_feirajunto_index.jpeg" alt="">
+                  </a>
+                </div>
+                <div class="detail-box">
+                  <h5>
+                    <a href="#">
+                      Feira Juntô
+                    </a>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Local Section End -->
         
         <!-- pop up -->
          <button></button>
