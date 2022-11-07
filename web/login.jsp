@@ -8,6 +8,12 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="cp" value="${pageContext.request.contextPath}"/>
 
+<%
+    User us = new User();
+    boolean a = us.erro;
+
+%>
+
 
 
 <!DOCTYPE html>
@@ -68,18 +74,33 @@
                 </div>
                 <div class="row">
                     <div class="form_container">
-                        <form class="form_login" action="${cp}/check.jsp">
+                        <form class="form_login" action="${cp}/processaLogin" method="POST">
                             <div>
                                 <input type="email" name="login" class="form-control" placeholder="E-mail" />
                             </div>
                             <div>
                                 <input type="password" name="senha" class="form-control" placeholder="Senha" />
                             </div>
+                            
                             <div>
 
                                 <div class="btn_box">
-                                    <button class="btn btn-primary btn-block mb-4">Entrar</button>
+                                    <button class="btn btn-primary btn-block mb-4" id="conf">Entrar</button>
                                 </div>
+                                <div class="btn_box">
+                                <a href="#"></a>
+                                <a class="w" href="#open-modal" >
+                                    <button type="button" class="btn btn-primary btn-block mb-4">Enviar</button>
+                                </a>
+                                <br>
+                                <div id="open-modal" class="class-modal">
+                                    <div>
+                                        <div id="messageS">
+                                <h3>Senha incorreta! Tente novamente</h3>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
 
                                 <div class="text-center">
                                     <div class=""><span>

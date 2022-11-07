@@ -90,23 +90,24 @@ public class UsuarioServlet extends HttpServlet {
 
                 Part part = request.getPart("file");
                 String nomeArquivo = part.getSubmittedFileName();
-                
-//                String path = getServletContext().getRealPath("")+"\\files\\" + nomeArquivo;
 
+//                String path = getServletContext().getRealPath("")+"\\files\\" + nomeArquivo;
 //                String appPath = request.getServletContext().getRealPath("");
 //                String savePath = appPath + File.separator + "files";
 //                part.write(savePath + File.separator + nomeArquivo);
 //                FileInputStream is = (FileInputStream)part.getInputStream();
 //                uploadF(is, path);
-
                 Usuario u = new Usuario();
                 u.setNomeCompleto(nome);
                 u.setCpf(cpf);
                 u.setEmail(email);
                 u.setDataDeNascimento(dataDeNascimento);
                 if (senha.equals(cSenha)) {
-                    u.setSenha(senha);
-                    certo = true;
+                    if (senha.matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,16}$")) {
+                        u.setSenha(senha);
+                        certo = true;
+
+                    }
                 }
 //                u.setImage(b);
 
@@ -128,7 +129,6 @@ public class UsuarioServlet extends HttpServlet {
 //                InputStream is = part.getInputStream();
 
 //                uploadF(is, path);
-
                 Usuario u = new Usuario();
                 u.setEmail(email);
                 u.setImage(b);

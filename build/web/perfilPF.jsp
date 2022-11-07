@@ -80,10 +80,10 @@
                             <p>Foto</p>
                             <input type="file" name="arquivos" class="input-text"><br>
                             <p>E-mail</p>
-                            <input type="email" id="email" required="required" class="input-text"><br><br>
+                            <input type="email" name="email" required="required" class="input-text"><br><br>
                             <p>Telefone para contato</p>
-                            <input type="number" id="telefone" required="required" class="input-number"><br><br>
-                            <input class="btn-confirm" type="submit" value="Confirmar">
+                            <input type="number" name="telefone" required="required" class="input-number"><br><br>
+                            <input class="btn-confirm" type="submit" value="Confirmar" href="#fechar">
 
                         </forms>
                     </div>

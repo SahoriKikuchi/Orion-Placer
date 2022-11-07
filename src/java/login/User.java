@@ -30,6 +30,7 @@ public class User {
     public boolean result = false;
     public boolean pj = false;
     public boolean pf = false;
+    public boolean erro = true;
 
     public boolean verificarUsuario(String login, String senha) throws SQLException {
         String sql = "";
@@ -61,6 +62,7 @@ public class User {
             if (rs.next()) {
                 result = true;
                 pf = true;
+                erro = false;
             }
         } catch (Exception e) {
         }
@@ -70,6 +72,7 @@ public class User {
             if (rs.next()) {
                 result = true;
                 pj = true;
+                erro = false;
             }
 
         } catch (Exception epj) {
