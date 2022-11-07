@@ -3,12 +3,24 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/cadastroEmpresa.jsp</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/src/java/cadastroclientes/dao/UsuarioDAO.java</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/recuperarSenha.jsp</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/src/java/cadastroclientes/controladores/UsuarioServlet.java</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/login.jsp</file>
-            <file>file:/C:/Users/amand/OneDrive/Documentos/NetBeansProjects/PlaceR/web/index.jsp</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/src/java/cadastroclientes/controladores/EmpresaServlet.java</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/src/java/cadastroclientes/controladores/SenhaServlet.java</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/src/java/cadastroclientes/controladores/LoginServlet.java</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/src/java/cadastroclientes/dao/EmpresaDAO.java</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/web/perfilPF.jsp</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/web/cadastroEmpresa.jsp</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/src/java/cadastroclientes/controladores/UsuarioServlet.java</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/web/css/style.css</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/src/java/cadastroclientes/dao/DAO.java</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/web/perfilPJ.jsp</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/src/java/cadastroclientes/dao/ClassificacaoDAO.java</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/web/login.jsp</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/src/java/cadastroclientes/entidades/Classificacao.java</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/src/java/login/User.java</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/web/recuperarSenha.jsp</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/web/cadastroUsuario.jsp</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/web/index_logado.jsp</file>
+            <file>file:/C:/Users/lpcor/Documents/GitHub/Orion-Placer/web/envioEmailSenha.jsp</file>
         </group>
     </open-files>
 </project-private>

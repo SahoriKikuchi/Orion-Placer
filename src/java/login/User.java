@@ -37,7 +37,7 @@ public class User {
         String sqlpj = "";
         Connection conn = conectarBD();
         // SQL
-        sql = "UPDATE Email FROM usuario_pf "
+        sql = "UPDATE usuario_pf "
                 + "SET senha = "
                 + "'"
                 + senha
@@ -47,12 +47,12 @@ public class User {
                 + email
                 + "';";
 
-        sqlpj = "SELECT email FROM usuario_pj "
-                + "WHERE email = "
+        sqlpj = "UPDATE usuario_pj "
                 + "SET senha = "
                 + "'"
                 + senha
                 + "' "
+                + "WHERE email = "
                 + "'"
                 + email
                 + "';";
