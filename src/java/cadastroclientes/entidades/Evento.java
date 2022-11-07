@@ -8,6 +8,6 @@ package cadastroclientes.entidades;
  *
  * @author amand
  */
-public class EmailUtility {
+public class Evento {
     
 }
